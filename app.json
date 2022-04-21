@@ -15,12 +15,45 @@
     "pages/pay/index"
 
   ],
+  
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "春仔小卖部",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"white"
   },
+
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#ff2d4a",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/_ic_tabbar_home.png",
+        "selectedIconPath": "icons/ic_tabbar_home_select (1).png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "分类",
+        "iconPath": "icons/icon_tabbar_gzt_default.png",
+        "selectedIconPath": "icons/tabbar.png"
+      },
+      {
+        "pagePath": "pages/cart/index",
+        "text": "购物车",
+        "iconPath": "icons/cart.png",
+        "selectedIconPath": "icons/Cart (1).png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "我的",
+        "iconPath": "icons/User0.png",
+        "selectedIconPath": "icons/user.png"
+      }
+    ]
+  },
+
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

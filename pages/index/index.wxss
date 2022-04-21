@@ -1,0 +1,4 @@
+view{
+  /*使用自定义颜色*/
+  /* color: var(--themeColor); */
+}
