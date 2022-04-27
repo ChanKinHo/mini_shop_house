@@ -2,4 +2,31 @@
   <!--搜索框 开始-->
   <searchInput></searchInput>
   <!--搜索框 结束-->
+
+  <!--轮播图 开始-->
+   <!-- <image src="{{swiperList[0].image_src}}" /> -->
+  <view class="index_swiper">
+    <!-- 
+      1 swiper标签的默认宽度和高度为
+        100% * 150px
+      2 image标签的默认宽度和高度为
+        320px * 240px
+        mode属性： widthFix，让image标签的宽高和实际图片的宽高都等比例发生变化，且高度随宽度等比例缩放
+      3 设计轮播图的尺寸
+        3.1让image高度自适应，宽度100%
+        3.2让swiper标签的高度变成和实际图片一样
+    -->
+    <swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}">
+      <swiper-item
+        wx:for="{{swiperList}}"
+        wx:key="id"
+      >
+        <navigator>
+          <image mode="widthFix" src="{{item.image_src}}"/>
+        </navigator>
+      </swiper-item>
+    </swiper>
+      
+  </view>
+  <!--轮播图 结束-->
 </view>
